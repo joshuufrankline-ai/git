@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Hunting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+  <header class="navbar">
+    <div class="profile-pic">
+      <img src="Downloads/WhatsApp Image 2025-08-24 at 22.05.21_e55f7d2b.jpg" alt="Profile">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#help">Help</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="welcome-section">
+    <h1>Welcome to Your House Hunting Portal 🏠</h1>
+    <p>Your next home awaits!</p>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search location...">
+      <input type="number" placeholder="Max rent (Ksh)">
+      <button>Search</button>
+    </div>
+  </section>
+
+  <section class="apartment-section">
+    <h2>Available Apartments</h2>
+
+    <div class="apartment-grid">
+      <!-- Each Card -->
+      <div class="apartment-card" onclick="openModal(1)">
+        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" alt="Njukiiri">
+        <h3>Njukiiri Apartments</h3>
+      </div>
+
+      <div class="apartment-card" onclick="openModal(2)">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Kayole">
+        <h3>Kayole Apartments</h3>
+      </div>
+
+      <div class="apartment-card" onclick="openModal(3)">
+        <img src="https://images.unsplash.com/photo-1613977257360-9143b1d54b08" alt="G-Town">
+        <h3>G-Town Apartments</h3>
+      </div>
+
+      <div class="apartment-card" onclick="openModal(4)">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Kangaru">
+        <h3>Kangaru Apartments</h3>
+      </div>
+
+      <div class="apartment-card" onclick="openModal(5)">
+        <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="Kamiu">
+        <h3>Kamiu Apartments</h3>
+      </div>
+
+      <div class="apartment-card" onclick="openModal(6)">
+        <img src="https://images.unsplash.com/photo-1628744692293-43fd6b2f3b25" alt="Embu Town">
+        <h3>Embu Town Apartments</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL for SLIDES -->
+  <div id="apartmentModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalSlides"></div>
+      <p id="rentInfo"></p>
+      <p id="reasons"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Designed by <b>Joshua Francis</b></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
